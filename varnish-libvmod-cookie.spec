@@ -5,7 +5,7 @@
 %define	vmod	cookie
 Summary:	Cookie VMOD for Varnish
 Name:		varnish-libvmod-%{vmod}
-Version:	0.1
+Version:	1.0
 Release:	1
 License:	BSD
 Group:		Daemons
