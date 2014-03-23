@@ -40,7 +40,8 @@ mv libvmod-%{vmod}-*/* .
 VARNISHSRC=$(pkg-config --variable=srcdir varnishapi)
 %configure \
 	VARNISHSRC=$VARNISHSRC \
-	VMODDIR=%{vmoddir}
+	VMODDIR=%{vmoddir} \
+	--disable-static
 
 %{__make}
 %{?with_tests:%{__make} check}
