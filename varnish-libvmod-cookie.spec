@@ -28,7 +28,7 @@ Cookie VMOD for Varnish.
 
 %prep
 %setup -qc
-mv libvmod-cookie-*/* .
+mv libvmod-%{vmod}-*/* .
 
 %build
 %{__aclocal} -I m4
@@ -50,8 +50,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-%{__rm} $RPM_BUILD_ROOT%{_libdir}/varnish/vmods/libvmod_cookie.la
-%{__rm} -r $RPM_BUILD_ROOT%{_docdir}/libvmod-cookie
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/varnish/vmods/libvmod_%{vmod}.la
+%{__rm} -r $RPM_BUILD_ROOT%{_docdir}/libvmod-%{vmod}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -59,5 +59,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README.rst LICENSE
-%attr(755,root,root) %{vmoddir}/libvmod_cookie.so
-%{_mandir}/man3/vmod_cookie.3*
+%attr(755,root,root) %{vmoddir}/libvmod_%{vmod}.so
+%{_mandir}/man3/vmod_%{vmod}.3*
