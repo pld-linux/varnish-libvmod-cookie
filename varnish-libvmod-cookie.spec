@@ -9,8 +9,8 @@ Version:	1.0
 Release:	1
 License:	BSD
 Group:		Daemons
-Source0:	https://github.com/lkarsten/libvmod-cookie/archive/3.0/%{vmod}-%{version}.tar.gz
-# Source0-md5:	2c5ad49c59e9f9494d4518c1ea42a562
+Source0:	https://github.com/lkarsten/libvmod-cookie/archive/libvmod-%{vmod}-%{version}.tar.gz
+# Source0-md5:	cbd0f4c546d24896f0a1b81b4858621d
 URL:		https://github.com/lkarsten/libvmod-cookie
 BuildRequires:	autoconf
 BuildRequires:	automake
