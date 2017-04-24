@@ -6,7 +6,7 @@
 Summary:	Cookie VMOD for Varnish
 Name:		varnish-libvmod-%{vmod}
 Version:	1.0
-Release:	1
+Release:	2
 License:	BSD
 Group:		Daemons
 Source0:	https://github.com/lkarsten/libvmod-cookie/archive/libvmod-%{vmod}-%{version}.tar.gz
